@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Parte izquierda */
+.left {
+    flex: 1;
+    padding: 20px;
+    border-right: 2px solid #e0e0e0;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+/* Botones */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Parte derecha */
+.right {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+#resultado {
+    padding: 15px;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    min-height: 150px;
+    background-image: url('ruta/de/tu/imagen.png'); /* Inserta la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
